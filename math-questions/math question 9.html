@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math question 9</title>
+  </head>
+  <body>
+    <h1>What is Netwon's 3rd Law?</h1>
+
+    A - For every action there is an equal and opposite reaction. <br>
+    B - Every object in a state of uniform motion will remain in that state of motion unless an external force acts on it. <br>
+    C - Force is mass times acceleration<br>
+    D - Acceleration is constant <br>
+<select id="answer">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+
+<button type="button" onclick="checkAnswer()" name="button">Submit</button>
+  </body>
+  <script type="text/javascript">
+    function checkAnswer(){
+      answer = document.getElementById("answer").value
+      if(answer == "B"){
+        alert("RIGHT")
+      }
+      else{
+        alert("WRONG")
+      }
+    }
+  </script>
+</html>
